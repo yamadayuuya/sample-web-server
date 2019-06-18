@@ -329,3 +329,94 @@ Is this OK? (yes)
 You have new mail in /var/mail/boshy
 yamadamasakinoMacBook-Pro:mywebapi boshy$ 
 ```
+You have new mail.
+yamadamasakinoMacBook-Pro:~ boshy$ cd fujiwara
+yamadamasakinoMacBook-Pro:fujiwara boshy$ ls
+hello-git		sample-web-server
+learning-http-message	simple-web-site
+yamadamasakinoMacBook-Pro:fujiwara boshy$ cd mywebapi
+-bash: cd: mywebapi: No such file or directory
+yamadamasakinoMacBook-Pro:fujiwara boshy$ sam
+-bash: sam: command not found
+You have new mail in /var/mail/boshy
+yamadamasakinoMacBook-Pro:fujiwara boshy$ cd sample-web-server/
+yamadamasakinoMacBook-Pro:sample-web-server boshy$ cd mywebapi/
+yamadamasakinoMacBook-Pro:mywebapi boshy$ npm install --save express
+-bash: npm: command not found
+yamadamasakinoMacBook-Pro:mywebapi boshy$ npm init
+-bash: npm: command not found
+yamadamasakinoMacBook-Pro:mywebapi boshy$ cat ~/.bash_profile
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
+export PATH=$PATH:/Applications/MAMP/Library/bin
+if [ -f ~/.bashrc ] ; then
+  source .bashrc
+fi
+You have new mail in /var/mail/boshy
+yamadamasakinoMacBook-Pro:mywebapi boshy$ nodebrew
+-bash: nodebrew: command not found
+You have new mail in /var/mail/boshy
+yamadamasakinoMacBook-Pro:mywebapi boshy$ source ~/.bashrc
+yamadamasakinoMacBook-Pro:mywebapi boshy$ nodebrew
+-bash: nodebrew: command not found
+yamadamasakinoMacBook-Pro:mywebapi boshy$ echo "export PATH=$HOME/.nodebrew/current/bin:$PATH" >> ~/.bashrc
+yamadamasakinoMacBook-Pro:mywebapi boshy$ nodebrew
+-bash: nodebrew: command not found
+yamadamasakinoMacBook-Pro:mywebapi boshy$ curl -L git.io/nodebrew | perl - setup
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
+100 24634  100 24634    0     0   7666      0  0:00:03  0:00:03 --:--:--  7666
+Fetching nodebrew...
+Installed nodebrew in $HOME/.nodebrew
+
+========================================
+Export a path to nodebrew:
+
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+========================================
+yamadamasakinoMacBook-Pro:mywebapi boshy$ nodebrew
+-bash: nodebrew: command not found
+You have new mail in /var/mail/boshy
+yamadamasakinoMacBook-Pro:mywebapi boshy$ source ~/.bashrc
+yamadamasakinoMacBook-Pro:mywebapi boshy$ nodebrew
+nodebrew 1.0.1
+
+Usage:
+    nodebrew help                         Show this message
+    nodebrew install <version>            Download and install <version> (from binary)
+    nodebrew compile <version>            Download and install <version> (from source)
+    nodebrew install-binary <version>     Alias of `install` (For backward compatibility)
+    nodebrew uninstall <version>          Uninstall <version>
+    nodebrew use <version>                Use <version>
+    nodebrew list                         List installed versions
+    nodebrew ls                           Alias for `list`
+    nodebrew ls-remote                    List remote versions
+    nodebrew ls-all                       List remote and installed versions
+    nodebrew alias <key> <value>          Set alias
+    nodebrew unalias <key>                Remove alias
+    nodebrew clean <version> | all        Remove source file
+    nodebrew selfupdate                   Update nodebrew
+    nodebrew migrate-package <version>    Install global NPM packages contained in <version> to current version
+    nodebrew exec <version> -- <command>  Execute <command> using specified <version>
+
+Example:
+    # install
+    nodebrew install v8.9.4
+
+    # use a specific version number
+    nodebrew use v8.9.4
+yamadamasakinoMacBook-Pro:mywebapi boshy$ nodebrew ls
+v12.4.0
+
+current: v12.4.0
+yamadamasakinoMacBook-Pro:mywebapi boshy$ echo "export PATH=$HOME/.nodebrew/current/bin:$PATH" >> ~/.bashrc
+You have new mail in /var/mail/boshy
+yamadamasakinoMacBook-Pro:mywebapi boshy$ code .
+yamadamasakinoMacBook-Pro:mywebapi boshy$ node index.js
+Listening on port 3000
